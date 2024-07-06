@@ -1,40 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This project provides a template for building a personal website that is easy to customize using JSON configuration files. Users can download the project, make changes to the JSON files, and launch their own website with their preferred styles and content.
+
+## Features
+- Easy customization of primary and secondary colors, fonts, font colors, font styles, etc.
+- Content managed via JSON files.
+- Lightweight and easy to deploy.
+- No coding skills required for basic setup.
 
 ## Getting Started
+## Prerequisites
+- A web browser.
+- A text editor (optional, for editing JSON files).
 
-First, run the development server:
-
+## Installation
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [https://github.com/yourusername/personal-website-template.git](https://github.com/gouravbhardwaj/jsonpages)
+```
+2. Navigate to the project directory:
+```bash
+cd personal-website-template
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open the content.json file in a text editor to update your personal details that you want to show in the UI.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Customization
+1. Open the config.json file in a text editor. This file contains all the customizable properties.
+2. Modify the values in config.json to customize the appearance of your website.
+3. To change the content of your website, update the content.json file (if applicable).
+4. Save your changes and refresh the index.html file in your web browser to see the updates.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Configuration Options
+Primary Color: The main color used in the website (e.g., header background).
+Secondary Color: The secondary color used in the website (e.g., main background).
+Font Family: The font used for the text.
+Font Color: The color of the text.
+Font Size: The size of the text.
+Font Style: The style of the text (e.g., normal, italic).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Example config.json
+```bash
+{
+  "primaryColor": "#3498db",
+  "secondaryColor": "#2ecc71",
+  "fontFamily": "Arial, sans-serif",
+  "fontColor": "#333333",
+  "fontSize": "16px",
+  "fontStyle": "normal"
+}
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Example content.json
+```bash
+{
+  "header": "Welcome to My Personal Website",
+  "mainContent": "This is a customizable personal website. Edit the content.json file to change this text."
+}
+```
+## Deployment
+To deploy your website, upload the project files to your web server or a static site hosting service (e.g., GitHub Pages, Netlify).
 
-## Learn More
+## Contributing
+Contributions are welcome! Please fork the repository and create a pull request with your changes. Ensure your code follows the project's style guidelines and includes appropriate documentation.
 
-To learn more about Next.js, take a look at the following resources:
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Acknowledgements
+Inspired by various personal website templates and customization approaches.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
