@@ -1,0 +1,79 @@
+{
+    "name":"Gourav Bhardwaj",
+    "firstName" : "Gourav",
+    "lastName" : "Bhardwaj",
+    "shortDetail":"Technical Lead/ Architect",
+    "profileImage" : "/profileImage.jpg",
+    "openForJob" :false,
+    "getInTouch" : false,
+    "seoDetails" : {
+        "siteTitle" : "Gourav Bhardwaj - Resume",
+        "siteMetaDescription" : "Tech Lead with 10+ years of experience in Salesforce, MERN stack",
+        "websiteUrl" : "www.iaamgourav.com"
+    },
+    "summary":{
+        "heading":"Have around 10 Years of Experience in:",
+        "items":[
+            "Salesforce Configuration/ Development using Apex, VFPage, Lightning Web Component, Integration (REST API).",
+            "Using Salesforce Declarative.",
+            "Integrating Salesforce with External Application using REST API, JSON, LWC, and OAuth.",
+            "Deployment activities using Change Set, Salesforce DX, CI/CD using Jenkins and Bitbucket.",
+            "Experience working on Sales Cloud, Service Cloud and Communities.",
+            "Leading a team of Software Developers and handling User Requirement, effort estimation, designing solutions and mentoring/ training.",
+            "reated a Chrome Plugin to help Debug Logs in Salesforce.",
+            "Creator of Salesforce Blogging website https://sfdcrocks247.com"
+        ]
+    },
+    "skills":["Salesforce DX","LWC","APEX","Integration (Rest/SOAP)","Deployment CI/CD","Bitbucket","Declarative Coding","Sales Cloud","Service Cloud"],
+    "education":[
+        {
+            "school":"Techno India",
+            "degree" : "Bachelors of Computer Application",
+            "startDate" : "",
+            "endDate" : "",
+            "summary" : ""
+        }
+    ],
+    "employment":[
+        {
+            "companyName":"Capgemini India Pvt Ltd",
+            "jobTitle" : "Manager",
+            "startDate" : "",
+            "endDate" : "",
+            "isActiveJob" : "",
+            "summary" : ""
+        },
+        {
+            "companyName":"Lister Technologies",
+            "jobTitle" : "Senior Software Developer",
+            "startDate" : "",
+            "endDate" : "",
+            "isActiveJob" : "",
+            "summary" : ""
+        },
+        {
+            "companyName":"Cognizant Technology Solutions",
+            "jobTitle" : "Programmer",
+            "startDate" : "",
+            "endDate" : "",
+            "isActiveJob" : "",
+            "summary" : ""
+        }
+    ],
+    "awards":["Project Star","Out of the Box Innovation"],
+    "certificates":["Salesforce Platform Developer 1","Salesforce Platform Developer 2","Salesforce Certified Data Architect","Salesforce Certified Sharing and Visibility Architect","Copada Fundamentals 1","Copada Fundamentals 2"],
+    "social":[
+        {
+            "name":"Facebook",
+            "url" : "https://www.facebook.com/iamcursed13"
+        },
+        {
+            "name":"LinkedIn",
+            "url" : "https://www.linkedin.com/in/gourav-bhardwaj-76310a60/"
+        },
+        {
+            "name":"Instagram",
+            "url" : "https://www.instagram.com/iaamgourav/"
+        }
+    ]
+}
