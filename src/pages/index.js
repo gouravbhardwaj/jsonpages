@@ -9,21 +9,22 @@ import getContent from "../../controller/content";
 import Footer from "./footer";
 
 const theme = {
-  primaryColor      : 'blue-500',
+  primaryColor      : 'bg-blue-500',
   secondaryColor    : '',
   font              : '',
   fontSize          : '',
   textColor         : 'white',
+  borderColor       : 'border-blue-500'
 }
 
 const styleObj = {
-  backgroundColor   : `bg-${theme.primaryColor}`,
+  backgroundColor   : `${theme.primaryColor}`,
   foregroundColor   : 'bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900',
  
   headerTextStyle   : 'text-xl font-bold pb-4 flex gap-4',
-  blockBorderColor  : `border-b-4 border-${theme.primaryColor} border-solid`,
+  blockBorderColor  : `border-b-4 ${theme.borderColor} border-solid`,
   blockStyle        : '',
-  buttonStyle       : `px-4 py-2 border-solid border-2 border-${theme.primaryColor} rounded-full`,
+  buttonStyle       : `px-4 py-2 border-solid border-2 ${theme.borderColor} rounded-full`,
   buttonColor       : '',
   buttonTextColor   : 'text-white',
   buttonHoverColor  : '',
@@ -36,7 +37,7 @@ const styleObj = {
 
   pills : {
     parentDivStyle  : 'flex flex-wrap',
-    pillStyle       : `mt-2 h-8 text-lg text-white border-1 shadow-lg bg-${theme.primaryColor} rounded-xl p-1 text-lg font-medium px-2 mr-2`
+    pillStyle       : `mt-2 h-8 text-lg text-white border-1 shadow-lg ${theme.primaryColor} rounded-xl p-1 text-lg font-medium px-2 mr-2`
   },
 
   urlLinks:{
