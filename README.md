@@ -9,13 +9,19 @@ This project provides a template for building a personal website that is easy to
 ## Getting Started
 ## Prerequisites
 - A web browser.
-- A text editor (optional, for editing JSON files).
+- A text editor VSCode, Notepad, Notepad++ etc.
+- Node.js installed locally https://nodejs.org/en/download/prebuilt-installer
 
 ## Installation
-1. Clone the repository:
+1. Clone the repository or Download the Zip:
+
+Click on the Code button then copy the web url and enter the below command
 ```bash
-git clone [https://github.com/yourusername/personal-website-template.git](https://github.com/gouravbhardwaj/jsonpages)
+git clone https://github.com/gouravbhardwaj/jsonpages.git
 ```
+
+Click on the Code button and then click Download zip
+
 2. Navigate to the project directory:
 ```bash
 cd personal-website-template
@@ -23,41 +29,48 @@ cd personal-website-template
 
 3. Open the content.json file in a text editor to update your personal details that you want to show in the UI.
 
+4. Open the terminal/ command prompt in the project directory and enter npm run dev, this will start the server.
+
+5. Visit http://localhost:3000 to see the changes.
+
 ## Customization
-1. Open the config.json file in a text editor. This file contains all the customizable properties.
-2. Modify the values in config.json to customize the appearance of your website.
-3. To change the content of your website, update the content.json file (if applicable).
-4. Save your changes and refresh the index.html file in your web browser to see the updates.
-
-## Configuration Options
-Primary Color: The main color used in the website (e.g., header background).
-Secondary Color: The secondary color used in the website (e.g., main background).
-Font Family: The font used for the text.
-Font Color: The color of the text.
-Font Size: The size of the text.
-Font Style: The style of the text (e.g., normal, italic).
-
-Example config.json
+To customize the look and feel of the template.
+1. Make changes to the index.js file inside the pages folder. You can update the primarColor and other values in the theme section to alter the basic look of the template.
 ```bash
-{
-  "primaryColor": "#3498db",
-  "secondaryColor": "#2ecc71",
-  "fontFamily": "Arial, sans-serif",
-  "fontColor": "#333333",
-  "fontSize": "16px",
-  "fontStyle": "normal"
+const theme = {
+  primaryColor      : 'blue-500',
+  secondaryColor    : '',
+  font              : '',
+  fontSize          : '',
+  textColor         : 'white',
 }
 ```
 
-Example content.json
+2. Make changes to the styleObj JSON variable to make advance styling changes.
 ```bash
-{
-  "header": "Welcome to My Personal Website",
-  "mainContent": "This is a customizable personal website. Edit the content.json file to change this text."
-}
+const styleObj = {
+  backgroundColor   : `bg-${theme.primaryColor}`,
+  foregroundColor   : 'bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900',
+ 
+  headerTextStyle   : 'text-xl font-bold pb-4 flex gap-4',
+  blockBorderColor  : `border-b-4 border-${theme.primaryColor} border-solid`,
+  blockStyle        : '',
+  buttonStyle       : `px-4 py-2 border-solid border-2 border-${theme.primaryColor} rounded-full`,
+  buttonColor       : '',
+  buttonTextColor   : 'text-white',
+  buttonHoverColor  : '',
+.....
 ```
+
+3. Save the index.js file and confirm your changes in the UI.
+
 ## Deployment
-To deploy your website, upload the project files to your web server or a static site hosting service (e.g., GitHub Pages, Netlify).
+1. In you github/ bitbucket account upload the project in a new repository. (Create a new account if you don't already have one)
+
+2. Create an account in Vercel (https://vercel.com/).
+3. Connect github/ bitbucket account to your Vercel account.
+4. Create a new project in Vercel and select the repository where you uploaded the project.
+6. Deploy you code.
 
 ## Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your changes. Ensure your code follows the project's style guidelines and includes appropriate documentation.
